@@ -2,3 +2,5 @@
 
 Basic\ Project\ Framework.zip
 */node_modules
+*/bower_components
+*/.sass-cache

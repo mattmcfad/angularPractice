@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="phonecatApp">
+<head>
+	<title>Angular Practice - PhoneApp</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script src="bower_components/angular/angular.js"></script>
+	
+</head>
+<body>
+	<h1>PhoneApp</h1>
+
+	<ul ng-controller="PhoneListCtrl">
+		<li ng-repeat="phone in phones">
+			{{phone.name}}
+			<p>{{phone.snippet}}</p>
+		</li>
+	</ul>
+
+	<h1>Web Dev Technologies</h1>
+	<ul ng-controller="WebDevCtrl">
+		<li ng-repeat="tech in technology">
+			{{tech.name}}
+			<p>{{tech.company}}</p>
+			<p>{{tech.description}}</p>
+		</li>
+			
+	</ul>
+
+	<!-- <p>Total number of phones: 2</p> -->
+	<script src="js/controllers.js"></script>
+</body>
+</html>
