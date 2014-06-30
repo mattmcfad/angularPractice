@@ -12,7 +12,7 @@ phonecatApp.controller('PhoneListCtrl', function ($scope) {
 });
 
 
-phonecatApp.controller('WebDevCtrl', function ($scope) {
+phonecatApp.controller('WebDevCtrl', function($scope) {
   $scope.technology = [
     {'name': 'Grunt',
      'company': 'Google',
