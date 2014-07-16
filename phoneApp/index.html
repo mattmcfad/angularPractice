@@ -4,35 +4,15 @@
 	<title>Angular Practice - webdevApp</title>
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 	<script src="bower_components/angular/angular.js"></script>
-	
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/controllers.js"></script>
 </head>
 <body>
-	<h1>Angular Practice</h1>
 
-
-	<h2>Web Dev Technologies Filters</h2>
-
-	Search: 
-	<input ng-model="query">
+	<div ng-view>
+		
+	</div>
 	
-	Sort by:
-	<select ng-model="orderProp">
-		<option value="name">Alphabetical</option>
-		<option value="company">Company</option>
-		<option value="age">Newest</option>
-	</select>
-
-
-	<ul class="tech"ng-controller="WebDevCtrl">
-		<li ng-repeat="tech in technology | filter:query | orderBy:orderProp">
-			{{tech.name}}
-			<p>Created by: {{tech.company}}</p>
-			<p>{{tech.description}}</p>
-			<p>Created in: {{tech.age}}</p>
-		</li>
-			
-	</ul>
-
-	<script src="js/controllers.js"></script>
 </body>
 </html>
